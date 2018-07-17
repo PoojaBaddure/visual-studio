@@ -1,0 +1,9 @@
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\bin\Debug\form1.exe.config
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\bin\Debug\form1.exe
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\bin\Debug\form1.pdb
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.Form1.resources
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.main.resources
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.Properties.Resources.resources
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.csproj.GenerateResource.Cache
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.exe
+c:\users\hp\documents\visual studio 2010\Projects\form1\form1\obj\x86\Debug\form1.pdb
