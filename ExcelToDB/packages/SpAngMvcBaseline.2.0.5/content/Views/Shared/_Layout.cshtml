@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" class="ng-app:SpAngMvcTemplate" id="ng-app" ng-app="SpAngMvcTemplate">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Parliament Open Data</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!--Fonts - no http as we are running https-->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--[if lte IE 10]>
+        <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <script>
+            document.createElement('ng-include');
+            document.createElement('ng-pluralize');
+            document.createElement('ng-view');
+            document.createElement('ng:include');
+            document.createElement('ng:pluralize');
+            document.createElement('ng:view');
+        </script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+    <![endif]-->
+    <script>
+        if (document.documentMode < 8) {
+            alert("Your Document Mode is set to IE7 Standards or below. This website is only compatible with IE8+. Press F12 to change your mode or use Chrome or Firefox.");
+        }
+    </script>
+</head>
+<body ng-controller="NavigationController as navVm">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand pull-left" href="#">
+            <img alt="Brand" src="~/Content/Images/spLogoEnglish.gif" />
+        </a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-class="navVm.doNavigate('home')"><a class="btn" href="#/home/"><i class="fa fa-home fa-1x fa-pull-left"> &nbsp;Home</i></a></li>
+                    <li ng-class="navVm.doNavigate('menuitem1')"><a class="btn" href="#/menuitem1/"><i class="fa fa-list-alt fa-1x fa-pull-left"> &nbsp;Menu 1</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        <br />
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <img src="~/Content/Images/unlock.png" alt="Unlocked padlock image" class="opendatalogo" /> SP PRO
+                    &copy; @DateTime.Now.Year - <a href="http://www.scottish.parliament.uk/" target="_blank" class="opendatalogo2">The Scottish Parliament | Parlamaid na h-Alba</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/ng-app")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

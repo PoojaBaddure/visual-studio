@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmployeeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Employee.dbo.EmployeeTable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EmployeeTable">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="Designation" Type="nchar" MaxLength="10" />
+    <Property Name="Salary" Type="int" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="EmployeeModelStoreContainer">
+    <EntitySet Name="EmployeeTable" EntityType="Self.EmployeeTable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EmployeeTable].[EmployeeID] AS [EmployeeID], 
+    [EmployeeTable].[FirstName] AS [FirstName], 
+    [EmployeeTable].[LastName] AS [LastName], 
+    [EmployeeTable].[Gender] AS [Gender], 
+    [EmployeeTable].[Designation] AS [Designation], 
+    [EmployeeTable].[Salary] AS [Salary], 
+    [EmployeeTable].[City] AS [City], 
+    [EmployeeTable].[Country] AS [Country]
+    FROM [dbo].[EmployeeTable] AS [EmployeeTable]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

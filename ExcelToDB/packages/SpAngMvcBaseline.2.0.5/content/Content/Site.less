@@ -1,0 +1,179 @@
+﻿@font-family: 'Open Sans','Lora','Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+@nav-font: 'Lora','Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+@menu-hover-colour: #138ec8;
+//parliament pinks
+@heading-gradient-light: #af8bc6;
+@mark-light: #e3caf3;
+@heading-gradient-dark: #451877;
+@panel-border-dark: #451877;
+@btn-primary: #451877;
+@shadow-light: #cae1f5;
+
+body {
+    padding-top: 65px;
+    padding-bottom: 20px;
+    font-family: @font-family;
+    font-size: 15px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 100%;
+    margin-bottom: 40px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+//Some NAVBAR changes
+.navbar {
+    background-color: @heading-gradient-dark;
+    background-image: -o-linear-gradient(top, @heading-gradient-light 0, @heading-gradient-dark 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@heading-gradient-light), to(@heading-gradient-dark));
+    background-image: linear-gradient(to bottom, @heading-gradient-light 0, @heading-gradient-dark 100%);
+    color: #fff;
+    font-family: @nav-font;
+    -moz-box-shadow: 4px 4px 2px #eee;
+    -webkit-box-shadow: 4px 4px 2px #eee;
+    box-shadow: 4px 4px 2px #eee;
+    border-bottom: 3px solid #fff;
+
+    .navbar-nav {
+        li {
+            padding-right: 0;
+
+            a {
+                color: #fff;
+                height: 50px;
+                font-family: @font-family;
+                padding-right: 15px;
+                font-size:125%;
+
+                i {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .navbar-brand {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 0;
+        font-family: @nav-font;
+
+        img {
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: content-box;
+            max-height: 50px;
+            background-color: #fff;
+            padding: 8px;
+            padding-top: 0;
+            padding-bottom: 0;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+    }
+}
+
+.navbar-inverse {
+    border: none;
+    background-color: #fff;
+    font-family: @nav-font;
+
+    .navbar-toggle {
+        -moz-box-shadow: 0 0 0 #eee;
+        -webkit-box-shadow: 0 0 0 #eee;
+    }
+
+    .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background-color: white;
+
+        .icon-bar {
+            background-color: #000;
+        }
+    }
+
+    .navbar-brand:hover {
+        color: #ccc;
+        font-family: @nav-font;
+    }
+    //active item on the navbar
+    .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+        color: @menu-hover-colour;
+        background-color: white;
+        -moz-box-shadow: 1px 1px 1px @menu-hover-colour;
+        -webkit-box-shadow: 1px 1px 1px @menu-hover-colour;
+        box-shadow: 1px 1px 1px @menu-hover-colour;
+        font-family: @nav-font;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #a2dcf7;
+}
+
+
+.opendatalogo {
+    height: 50px;
+    width: 50px;
+    color: #333;
+}
+
+
+footer {
+    font-weight: bold;
+    font-size: 90%;
+    margin-top: 15px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 25px;
+    border-top: 1px solid #ddd;
+}
+
+.panel {
+    
+    overflow: auto;
+    border-color: @panel-border-dark;
+    -moz-box-shadow: 4px 4px 5px #cae1f5;
+    -webkit-box-shadow: 4px 4px 5px #cae1f5;
+    box-shadow: 4px 4px 5px #cae1f5;
+    font-family: @font-family;
+    border-radius: 8px;
+
+    .panel-heading {
+        background-color: @heading-gradient-dark;
+        background-image: -o-linear-gradient(top, @heading-gradient-light 0, @heading-gradient-dark 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(@heading-gradient-light), to( @heading-gradient-dark));
+        background-image: linear-gradient(to bottom, @shadow-light 0, @heading-gradient-dark 100%);
+        color: white;
+    }
+
+    .panel-title {
+        font-weight: bold;
+        font-size:110%;
+        padding:15px;
+    }
+
+    .panel-body {
+        font-size:90%;
+    }
+}

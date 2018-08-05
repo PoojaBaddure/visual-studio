@@ -1,0 +1,144 @@
+﻿body {
+  padding-top: 65px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  font-size: 15px;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100%;
+  margin-bottom: 40px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+  white-space: normal;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px;
+}
+.navbar {
+  background-color: #451877;
+  background-image: -o-linear-gradient(top, #af8bc6 0, #451877 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af8bc6), to(#451877));
+  background-image: linear-gradient(to bottom, #af8bc6 0, #451877 100%);
+  color: #fff;
+  font-family: 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  -moz-box-shadow: 4px 4px 2px #eee;
+  -webkit-box-shadow: 4px 4px 2px #eee;
+  box-shadow: 4px 4px 2px #eee;
+  border-bottom: 3px solid #fff;
+}
+.navbar .navbar-nav li {
+  padding-right: 0;
+}
+.navbar .navbar-nav li a {
+  color: #fff;
+  height: 50px;
+  font-family: 'Open Sans', 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  padding-right: 15px;
+  font-size: 125%;
+}
+.navbar .navbar-nav li a i {
+  padding-right: 0;
+}
+.navbar .navbar-brand {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 0;
+  font-family: 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.navbar .navbar-brand img {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: content-box;
+  max-height: 50px;
+  background-color: #fff;
+  padding: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.navbar-inverse {
+  border: none;
+  background-color: #fff;
+  font-family: 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.navbar-inverse .navbar-toggle {
+  -moz-box-shadow: 0 0 0 #eee;
+  -webkit-box-shadow: 0 0 0 #eee;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-inverse .navbar-toggle:focus {
+  background-color: white;
+}
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: #000;
+}
+.navbar-inverse .navbar-brand:hover {
+  color: #ccc;
+  font-family: 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #138ec8;
+  background-color: white;
+  -moz-box-shadow: 1px 1px 1px #138ec8;
+  -webkit-box-shadow: 1px 1px 1px #138ec8;
+  box-shadow: 1px 1px 1px #138ec8;
+  font-family: 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #a2dcf7;
+}
+.opendatalogo {
+  height: 50px;
+  width: 50px;
+  color: #333;
+}
+footer {
+  font-weight: bold;
+  font-size: 90%;
+  margin-top: 15px;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  padding-left: 25px;
+  border-top: 1px solid #ddd;
+}
+.panel {
+  overflow: auto;
+  border-color: #451877;
+  -moz-box-shadow: 4px 4px 5px #cae1f5;
+  -webkit-box-shadow: 4px 4px 5px #cae1f5;
+  box-shadow: 4px 4px 5px #cae1f5;
+  font-family: 'Open Sans', 'Lora', 'Segoe UI', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+  border-radius: 8px;
+}
+.panel .panel-heading {
+  background-color: #451877;
+  background-image: -o-linear-gradient(top, #af8bc6 0, #451877 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af8bc6), to(#451877));
+  background-image: linear-gradient(to bottom, #cae1f5 0, #451877 100%);
+  color: white;
+}
+.panel .panel-title {
+  font-weight: bold;
+  font-size: 110%;
+  padding: 15px;
+}
+.panel .panel-body {
+  font-size: 90%;
+}
+/*# sourceMappingURL=Site.css.map */

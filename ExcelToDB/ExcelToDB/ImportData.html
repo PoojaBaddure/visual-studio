@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>.: Import Data with AngularJS :.</title>
+    <meta charset="utf-8" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+<body ng-app="app">
+
+    <div ng-controller="Ctrl" class="container" style="margin-top:50px;">
+
+
+        <input type="file" name="file" class="form-control"
+               onchange="angular.element(this).scope().loadFile(this.files)" />
+        <br /><br />
+        <input type="button" value="Import Data" class="btn btn-default"
+               ng-click="handleFile()" />
+        <br />
+        <p ng-bind="msg"></p>
+
+    </div>
+
+    <!-- JS -->
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/ImportData.js"></script>
+
+    <script src="Scripts/xlsx.full.min.js"></script>
+    <script src="Scripts/jszip.js"></script>
+
+
+</body>
+</html>   

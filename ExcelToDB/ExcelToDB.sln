@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelToDB", "ExcelToDB\ExcelToDB.csproj", "{B27F3097-7E67-41F8-8B3C-4DF935C25CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B27F3097-7E67-41F8-8B3C-4DF935C25CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B27F3097-7E67-41F8-8B3C-4DF935C25CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B27F3097-7E67-41F8-8B3C-4DF935C25CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B27F3097-7E67-41F8-8B3C-4DF935C25CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30FFF10E-62A4-4921-8419-62793DC4FD39}
+	EndGlobalSection
+EndGlobal
